@@ -6,7 +6,7 @@ export default function RedirectionPage() {
   useEffect(() => {
     setTimeout(() => {
       redirect(
-        "https://industricom-group.odoo.com/event/forum-de-l-emploi-et-des-competences-17/register"
+        "https://industricom-group.odoo.com/event/industry-meeting-days-2026-10/register"
       );
     }, 1000);
   }, []);
