@@ -1,0 +1,1 @@
+Événement stratégique stimulant la dynamique industrielle de l’Oriental, valorisant investissements, partenariats public-privé, innovation et talents locaux pour renforcer l’attractivité économique de la région

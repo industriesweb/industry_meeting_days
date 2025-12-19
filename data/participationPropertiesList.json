@@ -1,0 +1,42 @@
+[
+  {
+    "icon": "ri-hand-coin-line",
+    "title": "Networking stratégique panafricain",
+    "description": "Connectez-vous avec des décideurs industriels, institutions publiques, investisseurs et leaders africains et internationaux. Développez des partenariats durables au cœur de l’écosystème industriel africain."
+  },
+  {
+    "icon": "ri-global-line",
+    "title": "Visibilité internationale",
+    "description": "Bénéficiez d’une exposition à forte valeur ajoutée auprès d’un public international qualifié. Positionnez votre organisation comme un acteur clé de la transformation industrielle et de l’Afrique 4.0."
+  },
+  {
+    "icon": "ri-brain-line",
+    "title": "Partage de connaissances & bonnes pratiques",
+    "description": "Accédez à des retours d’expérience concrets, des études de cas et des visions stratégiques sur l’Industrie 4.0, la digitalisation et la fabrication intelligente en Afrique."
+  },
+  {
+    "icon": "ri-rocket-line",
+    "title": "Opportunités business & B2B",
+    "description": "Identifiez des opportunités de développement, d’investissement et de co-création grâce à des rencontres B2B ciblées et des échanges directs avec les acteurs clés du marché."
+  },
+  {
+    "icon": "ri-mic-line",
+    "title": "Accès à des experts de haut niveau",
+    "description": "Échangez avec des experts reconnus, leaders industriels et innovateurs qui façonnent l’avenir de l’industrie africaine à travers la technologie et l’innovation."
+  },
+  {
+    "icon": "ri-trophy-line",
+    "title": "Valorisation de l’innovation africaine",
+    "description": "Mettez en lumière vos initiatives, solutions et projets innovants alignés avec la vision Afrique 4.0, et gagnez en reconnaissance à l’échelle continentale et internationale."
+  },
+  {
+    "icon": "ri-building-2-line",
+    "title": "Immersion dans l’Industrie 4.0",
+    "description": "Découvrez des solutions industrielles de pointe, des technologies émergentes et des applications concrètes de la transformation digitale adaptées aux réalités africaines."
+  },
+  {
+    "icon": "ri-group-line",
+    "title": "Plateforme d’échanges multi-acteurs",
+    "description": "Rejoignez une plateforme unique réunissant gouvernements, industriels, universités, centres de recherche et startups pour construire ensemble l’avenir industriel du continent."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "statisticLabel": "Visiteurs et professionnels",
+    "statisticValue": "1000",
+    "statisticIcon": "ri-group-line",
+    "isPlus": true
+  },
+  {
+    "statisticLabel": "Intervenants",
+    "statisticValue": "20",
+    "statisticIcon": "ri-user-voice-line",
+    "isPlus": true
+  },
+  {
+    "statisticLabel": "Partenaires",
+    "statisticValue": "50",
+    "statisticIcon": "ri-briefcase-4-line",
+    "isPlus": true
+  },
+  {
+    "statisticLabel": "Secteurs Stratégiques",
+    "statisticValue": "10",
+    "statisticIcon": "ri-line-chart-line",
+    "isPlus": true
+  }
+]

@@ -1,0 +1,1 @@
+Une rencontre bilatérale Maroc-Espagne axée sur la coopération industrielle et l’investissement, mettant en lumière les opportunités méditerranéennes et favorisant échanges entre institutions, industriels et investisseurs, avec un focus sur l’innovation et l’industrie durable.

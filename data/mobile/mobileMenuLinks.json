@@ -1,0 +1,39 @@
+[
+  {
+    "id": "Presentation",
+    "label": "Présentation",
+    "icon": "ri-information-line"
+  },
+  {
+    "id": "Discours-Royal",
+    "label": "Discours Royal",
+    "icon": "ri-vip-crown-line"
+  },
+  {
+    "id": "Orientations-Strategiques",
+    "label": "Orientations Stratégiques",
+    "icon": "ri-compass-3-line"
+  },
+  {
+    "id": "Statistiques",
+    "label": "Chiffres Clés",
+    "icon": "ri-bar-chart-line"
+  },
+  {
+    "id": "Pourquoi-Participer",
+    "label": "Pourquoi Participer",
+    "icon": "ri-question-line"
+  },
+  {
+    "id": "Retour-En-Images",
+    "label": "Retour En Images",
+    "icon": "ri-image-line"
+  },
+  { "id": "Programme", "label": "Programme", "icon": "ri-calendar-event-line" },
+  {
+    "id": "Intervenants",
+    "label": "Intervenants",
+    "icon": "ri-user-voice-line"
+  },
+  { "id": "Partenaires", "label": "Partenaires", "icon": "ri-shake-hands-line" }
+]

@@ -1,0 +1,1 @@
+Un rendez-vous stratégique autour des filières agro-industrielles, axé sur l’innovation, la gestion intelligente de l’eau et l’agriculture durable, favorisant le dialogue entre chercheurs, industriels, startups et décideurs pour faire du Souss Massa un hub d’innovation agro-industrielle.

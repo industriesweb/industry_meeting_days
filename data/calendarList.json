@@ -1,0 +1,59 @@
+[
+  {
+    "eventLogo": "https://res.cloudinary.com/dzcarbymi/image/upload/v1758813450/LMI_M-E_Plan_de_travail_1_copie_kut3y8.png",
+    "eventTitle": "Les Matinées de l'Industrie Maroc/Espagne",
+    "eventDescription": "/markdown/LMI.md",
+    "eventEdition": "1",
+    "eventThumbnail": "https://res.cloudinary.com/dzcarbymi/image/upload/v1758820049/background_zucjpb.jpg",
+    "eventCity": "Barcelone",
+    "eventDay": "04",
+    "eventMonth": "12",
+    "eventYear": "2025",
+    "eventUrl": "",
+    "colors": {
+      "primary": "",
+      "secondary": "",
+      "accent": "",
+      "text": "",
+      "text-inverted": ""
+    }
+  },
+  {
+    "eventLogo": "https://res.cloudinary.com/dzcarbymi/image/upload/v1758813732/omd_cli4gm.png",
+    "eventTitle": "Oriental Meeting Days",
+    "eventDescription": "/markdown/Omd.md",
+    "eventEdition": "1",
+    "eventThumbnail": "https://res.cloudinary.com/dzcarbymi/image/upload/v1758820094/background_wpb3dw.jpg",
+    "eventCity": "Nador",
+    "eventDay": "21",
+    "eventMonth": "11",
+    "eventYear": "2025",
+    "eventUrl": "",
+    "colors": {
+      "primary": "",
+      "secondary": "",
+      "accent": "",
+      "text": "",
+      "text-inverted": ""
+    }
+  },
+  {
+    "eventLogo": "https://res.cloudinary.com/dzcarbymi/image/upload/v1758813384/300_150_AGRIWATER_Plan_de_travail_1_copie_maoriy.png",
+    "eventTitle": "AgriWater 4.0",
+    "eventDescription": "/markdown/Agriwater.md",
+    "eventEdition": "1",
+    "eventThumbnail": "https://res.cloudinary.com/dzcarbymi/image/upload/v1759245402/agriwater_cbmaws.jpg",
+    "eventCity": "Agadir",
+    "eventDay": "21",
+    "eventMonth": "10",
+    "eventYear": "2025",
+    "eventUrl": "",
+    "colors": {
+      "primary": "",
+      "secondary": "",
+      "accent": "",
+      "text": "",
+      "text-inverted": ""
+    }
+  }
+]

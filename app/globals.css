@@ -1,0 +1,469 @@
+@import "tailwindcss";
+@import "remixicon/fonts/remixicon.css";
+@theme {
+  /* === BASE NEUTRALS (blue-tinted) === */
+  --color-background: #f3f7fb; /* very light blue-gray background */
+  --color-background-alt: #eaf1f8; /* subtle cyan-blue wash */
+  --color-surface: #ffffff; /* clean white surface */
+  --color-surface-alt: #f0f5fa; /* lightly elevated surface */
+  --color-border: #cfdbea; /* soft blue-gray border */
+  --color-border-strong: #b4c7de; /* stronger border */
+  --color-muted: #b7c9dd; /* muted blue-gray */
+  --color-overlay: #0e2f5599; /* translucent deep-blue overlay */
+
+  /* === TEXT COLORS === */
+  --color-text: #0f2238; /* deep navy for readability */
+  --color-text-muted: #3b5875; /* balanced muted blue */
+  --color-text-subtle: #5f7892; /* subtle blue-gray */
+  --color-text-inverted: #ffffff; /* for dark backgrounds */
+
+  /* === BRAND CORE === */
+  --color-primary: #13467d; /* primary deep blue */
+  --color-primary-light: #2a6aa3; /* lighter, approachable blue */
+  --color-primary-dark: #0b2d52; /* deep navy-blue */
+
+  --color-accent: #3dbce7; /* cyan accent */
+  --color-accent-light: #74d3f1; /* airy light cyan */
+  --color-accent-dark: #1f8fb4; /* deeper teal-cyan */
+
+  /* Harmonized Gradient (blue → cyan) */
+  --gradient-primary-accent: linear-gradient(
+    90deg,
+    #13467d 0%,
+    #3dbce7 100%
+  );
+
+  /* === SUPPORTIVE COLORS === */
+  --color-secondary: #1f7fb5; /* blue-cyan bridge */
+  --color-secondary-light: #5fb4dd; /* soft supportive blue */
+  --color-secondary-dark: #145b85; /* darker support tone */
+
+  --color-highlight: #ffd166; /* warm contrast highlight */
+
+  /* === SYSTEM COLORS (cool-aligned) === */
+  --color-success: #2fbf8f; /* cool green-teal success */
+  --color-warning: #f0b24d; /* warm amber warning */
+  --color-error: #e05353; /* clear danger red */
+  --color-info: #3dbce7; /* info aligned with accent */
+}
+
+@layer utilities {
+  .text-stroke-1 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color-text-inverted);
+  }
+  .text-stroke-2 {
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: var(--color-text-inverted);
+  }
+  .text-stroke-4 {
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: var(--color-text-inverted);
+  }
+  .underline-animated::before {
+    content: "";
+    @apply absolute w-full -bottom-2 h-1 bg-background/40;
+  }
+  .underline-animated::after {
+    content: "";
+    @apply absolute w-full -bottom-2 h-1 bg-background;
+    animation: underlineAnimation 6s linear infinite;
+  }
+  @keyframes underlineAnimation {
+    0% {
+      width: 0%;
+      left: 0;
+    }
+    50% {
+      width: 100%;
+      right: 0;
+    }
+    100% {
+      width: 0%;
+      right: 0;
+    }
+  }
+
+  .last-line {
+    text-align-last: center;
+  }
+
+  .tab-style {
+    @apply !text-xl before:!bg-transparent before:!border-background !duration-200 data-[state=active]:!text-text-inverted !z-20 !text-text !h-full;
+  }
+}
+
+@layer base {
+  ::selection {
+    @apply !bg-primary text-white;
+  }
+}
+
+.bg-pattern {
+  background-color: var(--color-background);
+  opacity: 0.3;
+  background-image:
+    repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      var(--color-background) 10px
+    ),
+    repeating-linear-gradient(var(--color-text), var(--color-background));
+  -webkit-mask-image: linear-gradient(transparent, black);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-image: linear-gradient(transparent, black);
+  isolation: isolate;
+}
+
+.bg-pattern-2 {
+  --s: 4px; /* control the size*/
+  --c1: var(--color-overlay);
+  --c2: var(--color-text);
+
+  --_g: conic-gradient(var(--c1) 25%, #0000 0) 0 0;
+  background:
+    var(--_g) / calc(2 * var(--s)) calc(var(--s) / 9.5),
+    var(--_g) / calc(var(--s) / 9.5) calc(2 * var(--s)),
+    repeating-conic-gradient(#0000 0 25%, var(--c1) 0 50%) var(--s) 0 /
+      calc(2 * var(--s)) calc(2 * var(--s)),
+    radial-gradient(50% 50%, var(--c2) 98%, var(--c1)) 0 0 / var(--s) var(--s);
+}
+
+/* Gallery Grid */
+.gallery-grid-card:nth-child(1) {
+  @apply order-1 col-span-6 lg:col-span-4 lg:row-span-3;
+}
+.gallery-grid-card:nth-child(2) {
+  @apply order-2 col-span-3 lg:col-span-2 lg:row-span-3;
+}
+.gallery-grid-card:nth-child(3) {
+  @apply order-3 col-span-3 lg:col-span-2 lg:row-span-3;
+}
+.gallery-grid-card:nth-child(4) {
+  @apply order-5 col-span-3 lg:order-4 lg:col-span-2 lg:row-span-3;
+}
+.gallery-grid-card:nth-child(5) {
+  @apply order-4 col-span-6 lg:order-5 lg:col-span-4 lg:row-span-3;
+}
+.gallery-grid-card:nth-child(6) {
+  @apply order-6 col-span-3 lg:col-span-2 lg:row-span-3;
+}
+.gallery-grid-card:nth-child(7) {
+  @apply order-7 col-span-6 lg:col-span-2 lg:row-span-3;
+}
+.gallery-grid-card:nth-child(8) {
+  @apply order-8 col-span-3 lg:col-span-2 lg:row-span-3;
+}
+.gallery-grid-card:nth-child(9) {
+  @apply order-9 col-span-3 lg:col-span-4 lg:row-span-3;
+}
+
+.modal-index {
+  z-index: 9999 !important;
+  position: fixed !important ;
+}
+
+/* --------------radix---------------- */
+
+:root,
+.light,
+.light-theme {
+  --teal-1: #f2f6f5;
+  --teal-2: #eaf2f0;
+  --teal-3: #d7efe9;
+  --teal-4: #c3e9e0;
+  --teal-5: #aee0d5;
+  --teal-6: #97d3c6;
+  --teal-7: #7ac2b3;
+  --teal-8: #49ad9c;
+  --teal-9: #169c89;
+  --teal-10: #008f7d;
+  --teal-11: #007564;
+  --teal-12: #113d35;
+
+  --teal-a1: #753af504;
+  --teal-a2: #0d57820b;
+  --teal-a3: #06a7931f;
+  --teal-a4: #04ab8f34;
+  --teal-a5: #03a3874a;
+  --teal-a6: #03977b62;
+  --teal-a7: #008c7280;
+  --teal-a8: #008d76b3;
+  --teal-a9: #01947fe9;
+  --teal-a10: #008f7d;
+  --teal-a11: #007564;
+  --teal-a12: #012f28ee;
+
+  --teal-contrast: #fff;
+  --teal-surface: #e7f0efcc;
+  --teal-indicator: #169c89;
+  --teal-track: #169c89;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root,
+    .light,
+    .light-theme {
+      --teal-1: oklch(96.9% 0.0046 179.7);
+      --teal-2: oklch(95.5% 0.0089 179.7);
+      --teal-3: oklch(93.2% 0.0266 179.7);
+      --teal-4: oklch(90.4% 0.0413 179.7);
+      --teal-5: oklch(86.8% 0.0535 179.7);
+      --teal-6: oklch(82.2% 0.0637 179.7);
+      --teal-7: oklch(76.2% 0.076 179.7);
+      --teal-8: oklch(68.4% 0.0971 179.7);
+      --teal-9: oklch(62.3% 0.1092 179.7);
+      --teal-10: oklch(58.1% 0.1092 179.7);
+      --teal-11: oklch(49.4% 0.1092 179.7);
+      --teal-12: oklch(32.7% 0.0497 179.7);
+
+      --teal-a1: color(display-p3 0.3608 0.0745 0.9647 / 0.013);
+      --teal-a2: color(display-p3 0.0078 0.3098 0.4863 / 0.041);
+      --teal-a3: color(display-p3 0.0118 0.5608 0.5059 / 0.103);
+      --teal-a4: color(display-p3 0.0039 0.6 0.4941 / 0.176);
+      --teal-a5: color(display-p3 0.0039 0.5686 0.4588 / 0.249);
+      --teal-a6: color(display-p3 0.0039 0.502 0.4078 / 0.331);
+      --teal-a7: color(display-p3 0.0039 0.4667 0.3686 / 0.437);
+      --teal-a8: color(display-p3 0 0.4549 0.3686 / 0.588);
+      --teal-a9: color(display-p3 0 0.451 0.3608 / 0.707);
+      --teal-a10: color(display-p3 0 0.4118 0.3333 / 0.747);
+      --teal-a11: color(display-p3 0 0.3176 0.251 / 0.796);
+      --teal-a12: color(display-p3 0 0.1333 0.102 / 0.878);
+
+      --teal-contrast: #fff;
+      --teal-surface: color(display-p3 0.9176 0.9412 0.9373 / 0.8);
+      --teal-indicator: oklch(62.3% 0.1092 179.7);
+      --teal-track: oklch(62.3% 0.1092 179.7);
+    }
+  }
+}
+
+:root,
+.light,
+.light-theme {
+  --gray-1: #f1f6f3;
+  --gray-2: #eaf3ee;
+  --gray-3: #e0eae5;
+  --gray-4: #d6e2dc;
+  --gray-5: #cddad4;
+  --gray-6: #c3d3cb;
+  --gray-7: #b8c7bf;
+  --gray-8: #a1b5ab;
+  --gray-9: #71877c;
+  --gray-10: #677d72;
+  --gray-11: #4a5f55;
+  --gray-12: #11241c;
+
+  --gray-a1: #353a7604;
+  --gray-a2: #0d6e530b;
+  --gray-a3: #02433315;
+  --gray-a4: #05422e20;
+  --gray-a5: #02392829;
+  --gray-a6: #043f2834;
+  --gray-a7: #022f1b3f;
+  --gray-a8: #01321d57;
+  --gray-a9: #00251489;
+  --gray-a10: #02241394;
+  --gray-a11: #001d10b2;
+  --gray-a12: #01140dee;
+
+  --gray-contrast: #ffffff;
+  --gray-surface: #ffffffcc;
+  --gray-indicator: #71877c;
+  --gray-track: #71877c;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root,
+    .light,
+    .light-theme {
+      --gray-1: oklch(96.8% 0.0055 164.5);
+      --gray-2: oklch(95.6% 0.012 164.5);
+      --gray-3: oklch(92.8% 0.0132 164.5);
+      --gray-4: oklch(90.2% 0.0151 164.5);
+      --gray-5: oklch(87.7% 0.0163 164.5);
+      --gray-6: oklch(85.2% 0.0202 164.5);
+      --gray-7: oklch(81.6% 0.0204 164.5);
+      --gray-8: oklch(75.5% 0.0258 164.5);
+      --gray-9: oklch(60.3% 0.0306 164.5);
+      --gray-10: oklch(56.8% 0.0306 164.5);
+      --gray-11: oklch(46.5% 0.0306 164.5);
+      --gray-12: oklch(24.2% 0.0306 164.5);
+
+      --gray-a1: color(display-p3 0.0588 0.0745 0.3608 / 0.013);
+      --gray-a2: color(display-p3 0.0078 0.3412 0.2196 / 0.037);
+      --gray-a3: color(display-p3 0.0078 0.2235 0.1569 / 0.078);
+      --gray-a4: color(display-p3 0.0078 0.2196 0.1373 / 0.119);
+      --gray-a5: color(display-p3 0.0078 0.2 0.1333 / 0.156);
+      --gray-a6: color(display-p3 0.0039 0.1804 0.1059 / 0.192);
+      --gray-a7: color(display-p3 0.0039 0.1529 0.0706 / 0.237);
+      --gray-a8: color(display-p3 0.0039 0.149 0.0863 / 0.327);
+      --gray-a9: color(display-p3 0 0.1137 0.0627 / 0.523);
+      --gray-a10: color(display-p3 0 0.1059 0.0588 / 0.564);
+      --gray-a11: color(display-p3 0 0.0863 0.0471 / 0.682);
+      --gray-a12: color(display-p3 0 0.0627 0.0314 / 0.915);
+
+      --gray-contrast: #ffffff;
+      --gray-surface: color(display-p3 1 1 1 / 80%);
+      --gray-indicator: oklch(60.3% 0.0306 164.5);
+      --gray-track: oklch(60.3% 0.0306 164.5);
+    }
+  }
+}
+
+:root,
+.light,
+.light-theme,
+.radix-themes {
+  --color-background: #f4f9f5;
+}
+/* -------------------------------------------------- */
+
+.rt-ScrollAreaThumb {
+  @apply bg-gradient-to-b from-secondary to-accent;
+  /* width: 2px !important; */
+}
+.rt-ScrollAreaScrollbar {
+  @apply !bg-background/10;
+}
+
+.swiper-pagination-horizontal {
+  pointer-events: none !important;
+}
+.participate::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    60deg,
+    transparent 0 35%,
+    var(--color-accent) 40% 60%,
+    transparent 65% 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100%;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 20;
+  animation: shine2 4s ease-in-out infinite;
+}
+@keyframes shine2 {
+  0% {
+    background-position-x: -600px;
+  }
+  100% {
+    background-position-x: 600px;
+  }
+}
+
+.plan-card {
+  position: relative;
+  overflow: hidden;
+}
+.plan-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    70deg,
+    transparent 0 45%,
+    var(--color-border) 48% 52%,
+    transparent 55% 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position-x: -150vw;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  z-index: 20;
+  animation: shine 10s ease-in-out infinite 100ms;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -150vw;
+  }
+  100% {
+    background-position-x: 150vw;
+  }
+}
+
+.purchase-btn {
+  background:
+    radial-gradient(
+      100% 100% at var(--7-x-position) var(--7-y-position),
+      #1b7fbd 9%,
+      transparent
+    ),
+    radial-gradient(
+      100% 100% at var(--8-x-position) var(--8-y-position),
+      #169c89 22%,
+      transparent
+    ),
+    #2e9c59;
+  animation-name: main;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  transition-timing-function: ease-out;
+}
+
+@property --7-x-position {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 80%;
+}
+
+@property --7-y-position {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 80%;
+}
+
+@property --8-x-position {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 80%;
+}
+
+@property --8-y-position {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 80%;
+}
+
+:root {
+  --7-x-position: 80% --7-y-position: 80% --8-x-position: 80%
+    --8-y-position: 80%;
+}
+
+@keyframes main {
+  50% {
+    --7-x-position: 20%;
+    --7-y-position: 20%;
+    --8-x-position: 20%;
+    --8-y-position: 20%;
+  }
+}
+
+.title-animated {
+  @apply bg-linear-to-l from-accent/50 via-white/50 to-accent/50 bg-clip-text;
+  animation: titleSlide 10s infinite linear ;
+}
+
+@keyframes titleSlide {
+  0%{
+    background-position-x: -100vw;
+  }
+  100%{
+    background-position-x: 100vw;
+  }
+}

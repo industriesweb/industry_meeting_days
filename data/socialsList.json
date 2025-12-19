@@ -1,0 +1,17 @@
+[
+  {
+    "title": "linkedin",
+    "path": "",
+    "icon": "ri-linkedin-line"
+  },
+  {
+    "title": "instagram",
+    "path": "",
+    "icon": "ri-instagram-line"
+  },
+  {
+    "title": "website",
+    "path": "https://industries.ma/",
+    "icon": "ri-global-line"
+  }
+]

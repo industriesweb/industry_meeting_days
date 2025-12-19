@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Silver",
+    "slug": "silver",
+    "price": "80 000",
+    "benefits": [
+      "Logo sur tous les outils de communication",
+      "Logo sur le site web de l’évènement",
+      "Logo sur l’ensemble des emailings et newsletters",
+      "Animation sur les réseaux sociaux",
+      "Logo sur les invitations print et électroniques",
+      "Insertion publicitaire Industrie du Maroc Magazine : 1/2 page",
+      "Insertion publicitaire Magazine arabe : 1/2 page",
+      "Insertion de bannière sur industries.ma et ar.industries.ma : 2 semaines",
+      "Production d’une capsule vidéo : 1’"
+    ]
+  },
+  {
+    "title": "Gold",
+    "slug": "gold",
+    "price": "150 000",
+    "benefits": [
+      "Logo sur tous les outils de communication",
+      "Logo sur le site web de l’évènement",
+      "Logo sur l’ensemble des emailings et newsletters",
+      "Animation sur les réseaux sociaux",
+      "Logo sur les invitations print et électroniques",
+      "Insertion publicitaire Industrie du Maroc Magazine : Pleine page",
+      "Insertion publicitaire Magazine arabe : Pleine page",
+      "Insertion de bannière sur industries.ma et ar.industries.ma : 3 semaines",
+      "Production d’une capsule vidéo : 2’"
+    ]
+  },
+  {
+    "title": "Platinum",
+    "slug": "platinum",
+    "price": "300 000",
+    "benefits": [
+      "Logo sur tous les outils de communication",
+      "Logo sur le site web de l’évènement",
+      "Logo sur l’ensemble des emailings et newsletters",
+      "Animation sur les réseaux sociaux",
+      "Logo sur les invitations print et électroniques",
+      "Insertion publicitaire Industrie du Maroc Magazine : Pleine page + 1/2 page",
+      "Insertion publicitaire Magazine arabe : Pleine page + 1/2 page",
+      "Insertion de bannière sur industries.ma et ar.industries.ma : 4 semaines",
+      "Production d’une capsule vidéo : 3’"
+    ]
+  },
+  {
+    "title": "Prestige",
+    "slug": "prestige",
+    "price": "500 000",
+    "benefits": [
+      "Logo sur tous les outils de communication",
+      "Logo sur le site web de l’évènement",
+      "Logo sur l’ensemble des emailings et newsletters",
+      "Animation sur les réseaux sociaux",
+      "Logo sur les invitations print et électroniques",
+      "Insertion publicitaire Industrie du Maroc Magazine : Double page",
+      "Insertion publicitaire Magazine arabe : Double page",
+      "Insertion de bannière sur industries.ma et ar.industries.ma : 5 semaines",
+      "Production d’une capsule vidéo : 4’"
+    ]
+  },
+  {
+    "title": "Officiel",
+    "slug": "officiel",
+    "price": "1 000 000",
+    "benefits": [
+      "Logo sur tous les outils de communication",
+      "Logo sur le site web de l’évènement",
+      "Logo sur l’ensemble des emailings et newsletters",
+      "Animation sur les réseaux sociaux",
+      "Logo sur les invitations print et électroniques",
+      "Insertion publicitaire Industrie du Maroc Magazine : Emplacement de rigueur + Double page",
+      "Insertion publicitaire Magazine arabe : Emplacement de rigueur + Double page",
+      "Insertion de bannière sur industries.ma et ar.industries.ma : 6 semaines",
+      "Production d’une capsule vidéo : 5’"
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Label": "Gratuit",
+    "href": "/participate/free",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1766075645/gratuit_ea6m33.jpg",
+    "description": "Accédez gratuitement à l’événement et découvrez les conférences, ateliers et intervenants sans engagement financier."
+  },
+  {
+    "Label": "Networking",
+    "href": "/participate/networking",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1766075513/imgi_39_abstract-digital-network-enhances-communication-cooperation-healthcare-providers_548264-96417_vvwrhh.jpg",
+    "description": "Profitez d’un espace privilégié pour rencontrer des professionnels, échanger des idées et créer de nouvelles opportunités de collaboration."
+  },
+  {
+    "Label": "Stand",
+    "href": "/participate/stand",
+    "image": "https://res.cloudinary.com/dzcarbymi/image/upload/v1758879539/Industry_Meeting_Days_ouvre_sa_7%E1%B5%89_%C3%A9dition_13_cm7x39_plmhdw.png",
+    "description": "Exposez votre marque ou vos services dans un espace dédié pour renforcer votre visibilité auprès des participants et partenaires."
+  },
+  {
+    "Label": "Sponsoring",
+    "href": "/participate/sponsoring",
+    "image": "https://images.pexels.com/photos/33727306/pexels-photo-33727306.jpeg",
+    "description": "Associez votre image à l’événement en tant que sponsor officiel et bénéficiez d’une visibilité renforcée avant, pendant et après l’événement."
+  }
+]

@@ -1,0 +1,126 @@
+{
+  "day1": {
+    "dayDate": "06 Mai 2025",
+    "programme": [
+      {
+        "time": "08:00 – 09:30",
+        "title": "Enregistrement et accueil",
+        "subTitles": null,
+        "activities": null
+      },
+      {
+        "time": "09:30 – 10:15",
+        "title": "Accueil de haut niveau et cérémonie d'ouverture",
+        "subTitles": null,
+        "activities": null
+      },
+      {
+        "time": "10:15 – 11:15",
+        "title": "Session spéciale sur l’Industrie 4.0 : façonner l’avenir industriel de l’Afrique",
+        "subTitles": null,
+        "activities": null
+      },
+      {
+        "time": "11:15 – 12:00",
+        "title": "Ouverture officielle de l’exposition",
+        "subTitles": null,
+        "activities": null
+      },
+      {
+        "time": "12:00 – 13:30",
+        "title": "Pause déjeuner",
+        "subTitles": null,
+        "activities": null
+      },
+      {
+        "time": "13:30 – 15:00",
+        "title": "Usines du futur en Afrique : technologies intelligentes pour des entreprises plus intelligentes",
+        "subTitles": [
+          "Atelier / Session à annoncer prochainement"
+        ],
+        "activities": null
+      },
+      {
+        "time": "15:00 – 16:00",
+        "title": "Orientations politiques pour accélérer l’industrialisation intelligente de l’Afrique",
+        "subTitles": [
+          "Atelier / Session à annoncer prochainement"
+        ],
+        "activities": null
+      },
+      {
+        "time": "16:00 – 17:30",
+        "title": "Session de meetup et pitching",
+        "subTitles": null,
+        "activities": null
+      },
+      {
+        "time": "20:00",
+        "title": "Dîner de gala et cérémonie des Awards de l’Industrie",
+        "subTitles": null,
+        "activities": null
+      }
+    ]
+  },
+  "day2": {
+    "dayDate": "07 Mai 2025",
+    "programme": [
+      {
+        "time": "09:30 – 10:30",
+        "title": "Renforcer les compétences en Afrique : développer les compétences numériques pour la fabrication moderne",
+        "subTitles": [
+          "Atelier / Session à annoncer prochainement"
+        ],
+        "activities": null
+      },
+      {
+        "time": "10:30 – 11:00",
+        "title": "Innover ensemble : vision du public sur l’Industrie 4.0 en Afrique",
+        "subTitles": null,
+        "activities": null
+      },
+      {
+        "time": "11:00 – 12:00",
+        "title": "Mise en œuvre de l’Industrie 4.0 pour la durabilité : une double transition (numérique / verte)",
+        "subTitles": [
+          "Atelier / Session à annoncer prochainement"
+        ],
+        "activities": null
+      },
+      {
+        "time": "12:00 – 13:30",
+        "title": "Pause déjeuner",
+        "subTitles": null,
+        "activities": null
+      },
+      {
+        "time": "13:30 – 14:30",
+        "title": "R&D et innovation pour la transition vers l’Industrie 4.0 en Afrique",
+        "subTitles": [
+          "Atelier / Session à annoncer prochainement"
+        ],
+        "activities": null
+      },
+      {
+        "time": "14:30 – 15:30",
+        "title": "Débloquer le financement et les investissements pour la fabrication intelligente en Afrique",
+        "subTitles": [
+          "Atelier / Session à annoncer prochainement"
+        ],
+        "activities": null
+      },
+      {
+        "time": "15:30 – 16:00",
+        "title": "Perspectives d’avenir et remarques de clôture",
+        "subTitles": null,
+        "activities": null
+      },
+      {
+        "time": "16:30",
+        "title": "Cocktail de networking",
+        "subTitles": null,
+        "activities": null
+      }
+    ]
+  }
+}

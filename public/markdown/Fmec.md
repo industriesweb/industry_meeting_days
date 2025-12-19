@@ -1,0 +1,1 @@
+Un forum reliant employeurs et talents du secteur industriel, favorisant recrutement, formation et insertion professionnelle, tout en valorisant les métiers de l’industrie 4.0 et de la transformation digitale.

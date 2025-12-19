@@ -1,0 +1,18 @@
+{
+  "king": {
+    "imageUrl": "https://res.cloudinary.com/dzcarbymi/image/upload/v1766055664/Mohammed_6_qqcvtx.png",
+    "textureUrl": "https://res.cloudinary.com/dqdis65g9/image/upload/v1758554925/coat_of_arms_fz678n.png",
+    "speechTitle": "Secteurs Stratégiques du Royaume",
+    "speechSubtitle": "Sa Majesté le Roi Mohammed VI",
+    "speechText": "/markdown/KingSpeech.md",
+    "speechTag": "Discours – Fête du Trône 2025"
+  },
+  "president": {
+    "imageUrl": "https://res.cloudinary.com/dzcarbymi/image/upload/v1758731065/Hicham_RAHIOUI_al4qy1.jpg",
+    "textureUrl": "https://res.cloudinary.com/dqdis65g9/image/upload/v1758554925/coat_of_arms_fz678n.png",
+    "speechTitle": "La stratégie nationale pour l’emploi",
+    "speechSubtitle": "M. AZIZ AKHENNOUCH",
+    "speechDescription": "Chef du gouvernement",
+    "speechText": "/markdown/PresidentSpeech.md"
+  }
+}
