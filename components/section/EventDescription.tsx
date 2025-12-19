@@ -30,7 +30,7 @@ const ImageTextContent = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.7, ease: "easeOut" },
+      transition: { duration: 0.7 },
     },
   };
 
@@ -72,8 +72,9 @@ const ImageTextContent = () => {
           className="lg:col-span-3 space-y-6 text-base sm:text-lg leading-relaxed text-center lg:text-justify"
         >
           <p className="font-medium">
-            <span className="font-semibold ">Industrie du Maroc Magazine</span> organise la 8ᵉ édition de
-            l’événement prestigieux « Industry Meeting Days ».
+            <span className="font-semibold ">Industrie du Maroc Magazine</span>{" "}
+            organise la 8ᵉ édition de l’événement prestigieux « Industry Meeting
+            Days ».
           </p>
 
           <p>
