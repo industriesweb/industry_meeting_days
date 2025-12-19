@@ -55,7 +55,7 @@ const ImageTextContent = () => {
         {/* Image — 1/4 */}
         <motion.div
           variants={scaleIn}
-          className="w-full aspect-[1.78/1] bg-linear-to-br from-background to-background-alt shadow-2xl lg:col-span-1 relative overflow-hidden rounded-2xl"
+          className="w-full aspect-[1.78/1] bg-transparent shadow-2xl lg:col-span-1 relative overflow-hidden rounded-2xl"
         >
           <Image
             src="https://res.cloudinary.com/dzcarbymi/image/upload/v1766138083/IDM_magazine-02_sbt2g6.png"
