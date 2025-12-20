@@ -1,9 +1,9 @@
-import React from "react";
 import Image from "next/image";
 import event from "@/data/event.json";
 import {
   Avatar,
   Box,
+  Button,
   DropdownMenu,
   Flex,
   Heading,
@@ -11,9 +11,15 @@ import {
 } from "@radix-ui/themes";
 import { CalendarFold, Circle, MapPinned } from "lucide-react";
 import EventCountDown from "../ui/countdowns/EventCountDown";
-import CTAButton from "../ui/buttons/CTAButton";
 import Link from "next/link";
 import MotionParent from "../ui/motions/MotionParent";
+
+const ParticipateUrls = [
+  { title: "Gratuit", path: "/participate/free" },
+  { title: "Networking", path: "/participate/networking" },
+  { title: "Stand", path: "/participate/stand" },
+  { title: "Sponsoring", path: "/participate/sponsoring" },
+];
 
 export default function HomeHero() {
   return (
@@ -24,8 +30,12 @@ export default function HomeHero() {
         <EventTitle />
         <EventThematic />
         <EventPresentation />
-        <MotionParent delay={0.25}>
-          <CTAButton className="!text-base md:!text-2xl md:!w-xs" />
+        <MotionParent delay={0.25} className="flex items-center gap-x-2">
+          {ParticipateUrls.map((item) => (
+            <Link key={item.title} href={item.path}>
+              <Button color="blue">{item.title}</Button>
+            </Link>
+          ))}
         </MotionParent>
         <EventCounter />
       </div>
