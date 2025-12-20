@@ -33,7 +33,7 @@ export default function HomeHero() {
         <MotionParent delay={0.25} className="flex items-center gap-x-2">
           {ParticipateUrls.map((item) => (
             <Link key={item.title} href={item.path}>
-              <Button color="blue" variant="surface">{item.title}</Button>
+              <Button color="blue" variant="surface" className="uppercase!">{item.title}</Button>
             </Link>
           ))}
         </MotionParent>
